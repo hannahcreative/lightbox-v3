@@ -75,22 +75,17 @@ $(function() {
     // find out which data-category is attached to the list item
     var whatCat = $(this).data('filter');
     console.log(whatCat);
-    
-    // first hide everything
-    $('[data-category]').hide();
 
-    // then show some that match the selector
-    $('[data-category="'+whatCat+'"]').fadeIn();
+    // If statement to show all if necessary
+    if (whatCat != 'all') {
+      // first hide everything
+      $('[data-category]').hide();
+
+      // then show some that match the selector
+      $('[data-category="'+whatCat+'"]').fadeIn();
+    } else {
+      $('[data-category]').fadeIn();
+    }
 
   });
 });
-
-// Add functionality to "show all" 
-
-
-  //   if (whatCat = 'all') {
-  //     console.log('you got it')
-  //   $('[data-category]').show();
-  // } else 
-  //   singleMatch();
-  // ;
