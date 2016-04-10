@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Lightbox</title>
+</head>
+<body>
+  <h1>Lightbox</h1>
+  <ul class="cats">
+    <li>Show all</li>
+    <li data-filter="cat-1">Category 1</li>
+    <li data-filter="cat-2">Category 2</li>
+    <li data-filter="cat-3">Category 3</li>
+  </ul>
+  <div class="itemWrapper">
+    <div class="box" data-category="cat-1" id="project1"><p>Project <span>One</span></p></div>
+    <div class="box" data-category="cat-2" id="project2"><p>Project <span>Two</span></p></div>
+    <div class="box" data-category="cat-3" id="project3"><p>Project <span>Three</span></p></div>
+    <div class="box" data-category="cat-4" id="project4"><p>Project <span>Four</span></p></div>
+  </div>
+  <div class="lightboxWrapper">
+    <div class="lightbox">
+      <img src="#" class="lightboxImg">
+      <div class="text">
+        <p class="projectTitle"></p>
+        <p class="projectDesc"></p>
+      </div> 
+      <a href="#" class="close">x</a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="scripts.js"></script> 
+</body>
+</html>
