@@ -86,3 +86,11 @@ $(function() {
 });
 
 // Add functionality to "show all" 
+
+
+  //   if (whatCat = 'all') {
+  //     console.log('you got it')
+  //   $('[data-category]').show();
+  // } else 
+  //   singleMatch();
+  // ;
