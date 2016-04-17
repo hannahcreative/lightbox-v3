@@ -2,13 +2,23 @@
 
 $white: snow;
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  max-width: 1080px;
+  margin: 0 auto;
   font-family: sans-serif;
-  // font-size: 42.5%;
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 
 h1 {
   text-align: center;
+  font-size: 4.0rem; 
+  line-height: 1.2;  
+  letter-spacing: -.1rem;
 }
 
 ul.cats {
@@ -19,14 +29,21 @@ ul.cats {
 ul.cats li {
   cursor: pointer;
   display: inline-block;
+  font-size: 1.7rem;
+  margin-right: 2em;
+  text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
 }
 
 .itemWrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
+  // max-width: 1100px;
+  // margin: 0 auto;
 }
 
 .box {
@@ -36,7 +53,7 @@ ul.cats li {
   text-align: center;
   color:#fff;
   background-size: cover;
-  margin: 20px 10px 0 10px;
+  // margin: 1.5em 0.5em 0 0.5em;
   cursor: pointer;
 
   p {
