@@ -6,7 +6,8 @@ body {
   margin: 0 auto;
   font-family: sans-serif;
   font-size: 1.5rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+  background: whitesmoke; }
 
 h1 {
   text-align: center;
@@ -22,7 +23,8 @@ ul.cats li {
   display: inline-block;
   font-size: 1.7rem;
   margin-right: 2em;
-  text-decoration: underline; }
+  background: #efefef;
+  padding: .5em 1em; }
   ul.cats li:hover {
     text-decoration: none; }
 
@@ -38,6 +40,7 @@ ul.cats li {
   text-align: center;
   color: #fff;
   background-size: cover;
+  margin: 1.5em 0.5em 0 0.5em;
   cursor: pointer; }
   .box p {
     font-size: 25px;
@@ -76,7 +79,7 @@ ul.cats li {
   display: none;
   width: 62em;
   height: 18.8em;
-  background: snow;
+  background: whitesmoke;
   position: absolute;
   top: 50%;
   left: 50%;
